@@ -1,12 +1,82 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formularz</title>
     <link href="style.css" rel="stylesheet">
 </head>
+
 <body>
-    
+    <main class="main">
+       <form class="form" method="POST" action="https://dev.cotenfrontend.pl">
+        <p class="form__paragraph">
+            <label class="form__label" for="firstName">Imię
+                <input class="form__input" id="firstName" name="firstName" type="text" value="" placeholder="Podaj Imię"/>
+            </label>
+        </p>
+        <p class="form__paragraph">
+            <label class="form__label" for="lastName">Nazwisko
+                <input class="form__input" id="lastName" name="lastName" type="text" value="" placeholder="Podaj Nazwisko"/>
+            </label>
+        </p>
+        <p class="form__paragraph">
+            <label class="form__label" for="phoneNumber">Nr. Telefonu
+                <input class="form__input" id="phoneNumber" name="phoneNumber" type="tel" value="" placeholder="Podaj numer telefonu"/>
+            </label>
+        </p>
+        <p class="form__paragraph">
+            <label class="form__label" for="email">E-mail
+                <input class="form__input" id="email" name="email" type="email" value="" placeholder="Podaj adres email"/>
+            </label>
+        </p>
+        <p class="form__paragraph">
+            <label class="form__label" for="numberOfPeople">Ilość osób
+                <input class="form__input" id="numberOfPeople" name="numberOfPeople" type="number" value="numberOfPeople" placeholder="Podaj liczbę osób dorosłych + dzieci"/>
+            </label>
+        </p>
+        <p class="form__paragraph">
+            <label class="form__label" for="roomsOfNumber">Ilość pokoi
+                <input class="form__input" id="roomsOfNumber" name="numberOfRooms" type="number" value="numberOfRooms" placeholder="Podaj liczbę pokoi"/>
+            </label>
+        </p>
+        <p class="form__paragraph">
+            <label class="form__label" for="dateFrom">Data przyjazdu
+                <input class="form__input" id="dateFrom" name="date" type="date" value="dateFrom" placeholder="Podaj datę przyjazdu"/>
+            </label>
+        </p>
+        <p class="form__paragraph">
+            <label class="form__label" for="dateTo">Data wyjazdu
+                <input class="form__input" id="dateTo" name="date" type="date" value="dateTo" placeholder="Podaj datę wyjazdu"/>
+            </label>
+        </p>
+        <p class="form__paragraph">
+            <label class="form__label" for="rooms">Pokój
+                <select class="form__input" name="rooms" id="rooms" aria-placeholder="Wybierz pokój">
+                    <option class="room-1">Pokój nr. 1 - 5-osobowy</option>
+                    <option class="room-2">Pokój nr. 2 - 3-osobowy</option>
+                    <option class="room-3">Pokój nr. 3 - 3-osobowy</option>
+                    <option class="room-4">Pokój nr. 4 - 3-osobowy</option>
+                    <option class="room-5">Pokój nr. 5 - 4-osobowy</option>
+                    <option class="room-6">Pokój nr. 6 - 5-osobowy</option>
+                    <option class="room-7">Pokój nr. 7 - 3-osobowy</option>
+                    <option class="room-8">Pokój nr. 8 - 5-osobowy</option>
+                </select>
+            </label>
+        </p>
+        <p class="form__paragraph form__paragraph--txt">
+            <label class="form__label" for="message">Wiadomość
+               <textarea class="form__input form__input--txt"  name="message" id="message" value="message" placeholder="Wpisz treść wiadomości" ></textarea>
+            </label>
+        </p>
+        <p class="form__submit">
+            <label for="send">
+             <input class="form__send" id="send" name="sendButton" type="submit" value="Wyślij">
+            </label>
+        </p>
+       </form>
+    </main>
 </body>
+
 </html>
