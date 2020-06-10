@@ -13,27 +13,27 @@
        <form class="form" method="POST" action="https://dev.cotenfrontend.pl">
         <p class="form__paragraph">
             <label class="form__label" for="firstName">Imię
-                <input class="form__input" id="firstName" name="firstName" type="text" value="" placeholder="Podaj Imię"/>
+                <input required class="form__input" id="firstName" name="firstName" type="text" value="" placeholder="Podaj Imię" pattern="[a-zA-Z]+"/>
             </label>
         </p>
         <p class="form__paragraph">
             <label class="form__label" for="lastName">Nazwisko
-                <input class="form__input" id="lastName" name="lastName" type="text" value="" placeholder="Podaj Nazwisko"/>
+                <input required class="form__input" id="lastName" name="lastName" type="text" value="" placeholder="Podaj Nazwisko" pattern="[a-zA-Z]+"/>
             </label>
         </p>
         <p class="form__paragraph">
             <label class="form__label" for="phoneNumber">Nr. Telefonu
-                <input class="form__input" id="phoneNumber" name="phoneNumber" type="tel" value="" placeholder="Podaj numer telefonu"/>
+                <input required class="form__input" id="phoneNumber" name="phoneNumber" type="tel" value="" placeholder="Podaj numer telefonu"/>
             </label>
         </p>
         <p class="form__paragraph">
             <label class="form__label" for="email">E-mail
-                <input class="form__input" id="email" name="email" type="email" value="" placeholder="Podaj adres email"/>
+                <input required class="form__input" id="email" name="email" type="email" value="" placeholder="Podaj adres email"/>
             </label>
         </p>
         <p class="form__paragraph">
             <label class="form__label" for="numberOfPeople">Ilość osób
-                <input class="form__input" id="numberOfPeople" name="numberOfPeople" type="number" value="numberOfPeople" placeholder="Podaj liczbę osób dorosłych + dzieci"/>
+                <input required class="form__input" id="numberOfPeople" name="numberOfPeople" type="number" value="numberOfPeople" placeholder="Podaj liczbę osób dorosłych + dzieci"/>
             </label>
         </p>
         <p class="form__paragraph">
@@ -43,12 +43,12 @@
         </p>
         <p class="form__paragraph">
             <label class="form__label" for="dateFrom">Data przyjazdu
-                <input class="form__input" id="dateFrom" name="date" type="date" value="dateFrom" placeholder="Podaj datę przyjazdu"/>
+                <input required class="form__input" id="dateFrom" name="date" type="date" value="dateFrom" placeholder="Podaj datę przyjazdu"/>
             </label>
         </p>
         <p class="form__paragraph">
             <label class="form__label" for="dateTo">Data wyjazdu
-                <input class="form__input" id="dateTo" name="date" type="date" value="dateTo" placeholder="Podaj datę wyjazdu"/>
+                <input required class="form__input" id="dateTo" name="date" type="date" value="dateTo" placeholder="Podaj datę wyjazdu"/>
             </label>
         </p>
         <p class="form__paragraph">
@@ -67,7 +67,7 @@
         </p>
         <p class="form__paragraph form__paragraph--txt">
             <label class="form__label" for="message">Wiadomość
-               <textarea class="form__input form__input--txt"  name="message" id="message" value="message" placeholder="Wpisz treść wiadomości" ></textarea>
+               <textarea required class="form__input form__input--txt"  name="message" id="message" value="message" placeholder="Wpisz treść wiadomości" pattern="[a-zA-Z0-9]+"></textarea>
             </label>
         </p>
         <p class="form__submit">
